@@ -1,144 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-<title>TOPPER CLASSES MANER</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topper Classes Maner</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; color: #333; }
+        header { background: linear-gradient(to right, #004080, #0066cc); color: white; padding: 30px 15px; text-align: center; }
+        
+        nav { background: #222; position: sticky; top: 0; z-index: 1000; overflow: hidden; }
+        nav a { float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 14px; text-transform: uppercase; font-weight: bold; }
+        nav a:hover { background-color: #444; }
+        
+        .icon { display: none; }
 
-<style>
-body {margin:0; font-family:Arial;}
+        @media screen and (max-width: 600px) {
+          nav a:not(:first-child) {display: none;}
+          nav a.icon { float: right; display: block; font-size: 20px; }
+          nav.responsive {position: relative;}
+          nav.responsive .icon { position: absolute; right: 0; top: 0; }
+          nav.responsive a { float: none; display: block; text-align: left; border-bottom: 1px solid #333; }
+        }
 
-header {
-    background:#0d47a1;
-    color:white;
-    padding:15px;
-    text-align:center;
-}
+        .hero { background: white; padding: 40px 20px; text-align: center; border-bottom: 4px solid #ff6600; }
+        .section { padding: 25px 15px; max-width: 800px; margin: auto; }
+        .card { background: white; padding: 20px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-left: 5px solid #004080; }
+        .btn { display: inline-block; background: #ff6600; color: white; padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: bold; margin-top: 15px; }
+        
+        .study-box { background: #e3f2fd; border: 2px dashed #004080; padding: 20px; border-radius: 15px; text-align: center; margin-bottom: 20px; }
+        
+        .gallery-box { background: #ffffff; border-radius: 15px; padding: 20px; text-align: center; margin-bottom: 20px; border: 1px solid #ddd; }
+        .gallery-img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
 
-<div class="banner">
-    <h2>Welcome Students 📚</h2>
-    <p>Join now and score high marks</p>
-
-    <div class="button-box">
-        <a href="tel:8340495127" class="btn call">📞 Call Now</a>
-        <a href="https://wa.me/916203403009" class="btn whatsapp">💬 WhatsApp</a>
-    </div>
-</div>
-
-.section {padding:20px; text-align:center;}
-
-.card {
-    background:#ffffff;
-    margin:10px;
-    padding:15px;
-    border-radius:10px;
-    color:black;
-    font-weight:bold;
-    font-size:18px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-}color:black;
-
-.btn {
-    display:inline-block;
-    margin:10px;
-    padding:12px 20px;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-}
-
-.call {background:green;}
-.whatsapp {background:#25D366;}
-.call {background:green;}
-.box
-
-footer {
-    background:#0d47a1;
-    color:white;
-    padding:10px;
-    text-align:center;
-}
-</style>
+        .footer { background: #222; color: white; text-align: center; padding: 20px; font-size: 13px; }
+        .topper-card { background: white; padding: 15px; border-radius: 10px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    </style>
 </head>
-
 <body>
 
 <header>
-<h1>TOPPER CLASSES MANER</h1>
-<p>Best Coaching for Class 10 & 12</p>
+    <h1 style="margin:0;">TOPPER CLASSES Maner</h1>
+    <p style="margin:5px 0 0;">Near Shiv Mandir, Maner (Patna)</p>
+    <p style="font-style: italic; color: #ffcc00; font-weight: bold;">"Padhe Wahan Jahan Puchne ki Azadi ho!"</p>
 </header>
 
-<div class="banner">
-<h2>Welcome Students 📚</h2>
-<p>Join now and score high marks</p>
+<nav id="myTopnav">
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#study">Notes</a>
+    <a href="#toppers">Toppers</a>
+    <a href="#location">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+</nav>
 
-<a href="tel:6203403009" class="btn call">📞 Call Now</a>
-<a href="https://wa.me/7909099715" class="btn whatsapp">💬 WhatsApp</a>
-<a href="https:8340495127" class="btn call">📞 Call Now</a>,
-
-<div class="section">
-<h2>Our Subjects</h2>
-<div class="card">Math</div>
-<div class="card">Physics</div>
-<div class="card">Chemistry</div>
+<div class="hero" id="home">
+    <h2>Maner ka No. 1 Coaching</h2>
+    <p>Bihar Board Class 11th & 12th Special Batches</p>
+    <a href="tel:8340495127" class="btn">Call for Admission</a>
 </div>
 
-<div class="section">
-<h2>Admission Form 📝</h2>
-<a href="<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIGLiDWlXlCVy6yEJz_vFQgQou4Q5NBUYMxHct3AFV24ZXhA/viewform?embedded=true" width="640" height="1906" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>" target="_blank" class="btn call">
-Fill Admission Form
-</a>
+<div class="section" id="courses">
+    <h2 style="text-align:center; color: #004080;">Hamare Vishesh Batch</h2>
+    <div class="card"><h3>Chemistry</h3><p>Complete Inorganic, Organic & Physical Chemistry.</p></div>
+    <div class="card"><h3>Physics</h3><p>Concept clearing with Numerical solving.</p></div>
+    <div class="card"><h3>Math</h3><p>Deep knowledge with easy methods.</p></div>
 </div>
 
-<div class="section">
-<h2>Our Location 📍</h2>
-<iframe src="https://www.google.com/maps?q=Maner+Bihar&output=embed"
-width="100%" height="300"></iframe>
+<div class="section" id="gallery">
+    <div class="gallery-box">
+        <h2 style="color: #004080; margin-top: 0;">📸 Coaching ki Jhalak</h2>
+        <p>Hamara modern classroom aur coaching complex.</p>
+        <img src="https://lh5.googleusercontent.com/p/AF1QipN3-y189g-f19B_G_E4mH9h3D3z2P4_5_5_5_5_=s1600-w800" 
+             alt="Topper Classes Maner Complex" 
+             class="gallery-img">
+             <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+     alt="Topper Classes Maner" 
+     class="gallery-img">
+
+    </div>
 </div>
 
-<footer>
-<p>© 2026 Topper Classes Maner</p>
-</footer>
+<div class="section" id="study">
+    <div class="study-box">
+        <h2 style="color: #004080; margin-top: 0;">📚 Free Study Material</h2>
+        <p>Aap niche diye gaye button par click karke Chemistry, Physics aur Math ke important Notes download kar sakte hain.</p>
+        <a href="https://drive.google.com/drive/folders/1AwXUSYLeOnfEqz2QgnrDeMc1aTEzGYOZ" 
+           target="_blank" 
+           class="btn" style="background: #004080;">
+           Download All PDFs 📥
+        </a>
+    </div>
+</div>
+
+<div class="section" id="toppers">
+    <h2 style="text-align:center; color: #004080;">🏆 Hamare Toppers (2025-26)</h2>
+    <div class="topper-card">
+        <div><strong>Sobha Kumari</strong><br><small>Total: 432/500</small></div>
+        <div style="font-weight:bold; color:#d4af37;">Rank 1</div>
+    </div>
+    <div class="topper-card">
+        <div><strong>Bipin Kumar</strong><br><small>Physics: 423/500</small></div>
+        <div style="font-weight:bold; color:#888;">Rank 2</div>
+    </div>
+    <div class="topper-card">
+        <div><strong>Suhani Kumari</strong><br><small>Total: 407/500</small></div>
+        <div style="font-weight:bold; color:#a0522d;">Rank 3</div>
+    </div>
+</div>
+
+<div class="section" id="location" style="text-align: center;">
+    <h2 style="color: #004080;">📍 Hamara Location</h2>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; border: 2px solid #ddd;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.433842104523!2d84.877028!3d25.623724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398dabe27b1b8257%3A0x49c1438917ad3329!2sTopper%20Classes%20Maner!5e0!3m2!1sen!2sin!4v1712161200000!5m2!1sen!2sin" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <a href="https://maps.google.com/?cid=12124565315569807081&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="btn" style="background: #28a745;">Google Maps par dekhein</a>
+</div>
+
+<div class="footer">
+    <p><b>Contact Us:</b><br>+91 8340495127 | +91 6203403009</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScIGLiDWlXlCVy6yEJz_vFQgQou4Q5NBUYMxHct3AFV24ZXhA/viewform?usp=header" target="_blank" class="btn" style="background: #e91e63;">Admission Form Bharein 📝</a>
+    <hr style="border: 0.5px solid #444; width: 50%; margin: 20px auto;">
+    <p>© 2026 Topper Classes Maner</p>
+</div>
+
+<a href="https://wa.me/918340495127" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; text-align: center; line-height: 60px; font-size: 24px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 2000; text-decoration: none; font-weight: bold;">WA</a>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "") { x.className += " responsive"; } 
+  else { x.className = ""; }
+}
+</script>
 
 </body>
 </html>
-<div class="section">
-    <h2>🏆 Class 10 Toppers</h2>
-
-    <div class="topper-container">
-        <div class="topper-card">
-            <div class="topper-name">Karan Kumar</div>
-            <div class="topper-marks">93.2%</div>
-        </div>
-
-        <div class="topper-card">
-            <div class="topper-name">Ashish Ranjan</div>
-            <div class="topper-marks">83.4%</div>
-        </div>
-
-        <div class="topper-card">
-            <div class="topper-name">Abhishek Kumar</div>
-            <div class="topper-marks">81.4%</div>
-        </div>
-    </div>
-</div>
-
-<div class="section">
-    <h2>🏆 Class 12 Toppers</h2>
-
-    <div class="topper-container">
-        <div class="topper-card">
-            <div class="topper-name">Sobha Kumari</div>
-            <div class="topper-marks">86.4%</div>
-        </div>
-
-        <div class="topper-card">
-            <div class="topper-name">Bipin Kumar</div>
-            <div class="topper-marks">84.6%</div>
-        </div>
-
-        <div class="topper-card">
-            <div class="topper-name">Suhani Kumari</div>
-            <div class="topper-marks">81.4%</div>
-        </div>
-    </div>
-</div>
